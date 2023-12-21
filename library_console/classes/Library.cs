@@ -13,11 +13,6 @@ namespace library_console.classes
             Members = new List<Member>();
             Books = new List<Book>();
         }
-        public Library(string name) { 
-            Name = name;
-            Members = new List<Member>();
-            Books = new List<Book>();
-        }
         public Library(string name, List<Member>? members = null, List<Book>? books = null) { 
             Name = name; 
             Members = members ?? new List<Member>();

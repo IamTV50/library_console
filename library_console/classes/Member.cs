@@ -19,13 +19,13 @@ namespace library_console.classes
             PhoneNumber = null;
             BorrowedBooks = new List<string>();
         }
-        public Member(string id, string fistName, string lastName, string email, string? phoneNum = null, List<string>? books = null) {
+        public Member(string id, string fistName, string lastName, string email, string? phoneNum = null) {
             Id = id;
             FirstName = fistName;
             LastName = lastName;
             Email = email;
             PhoneNumber = phoneNum;
-            BorrowedBooks = books ?? new List<string>();
+            BorrowedBooks = new List<string>(); //member can't have any borrowed books when opening new "account"
         }
         public void changeInfo(string fistName, string lastName, string email, string? phoneNum = null) {
             FirstName = fistName;
